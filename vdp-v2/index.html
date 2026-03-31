@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Versos de Prata — Joias em Prata 925 com frete grátis. Anéis, pulseiras, colares, brincos e conjuntos delicados."/>
+  <title>Versos de Prata — Joias em Prata 925</title>
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════
+     SEARCH OVERLAY GLOBAL
+═══════════════════════════════════════ -->
+<div class="search-overlay" id="searchOverlay" role="search" aria-label="Buscar produtos">
+  <div class="search-box">
+    <input type="search" id="searchInput" placeholder="Pesquisar produtos..."
+           autocomplete="off" aria-label="Campo de busca"/>
+    <button class="search-close" id="searchClose" aria-label="Fechar busca">✕</button>
+    <div class="search-results-overlay" id="searchResultsOverlay" role="listbox"></div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     CARRINHO — OVERLAY + PAINEL
+═══════════════════════════════════════ -->
+<div class="cart-overlay" id="cartOverlay" aria-hidden="true"></div>
+
+<aside class="cart-panel" id="cartPanel" aria-label="Carrinho de compras">
+  <div class="cart-header">
+    <h2 class="cart-title">Carrinho</h2>
+    <button class="btn-cart-close icon-btn" id="btnCartClose" aria-label="Fechar carrinho">✕</button>
+  </div>
+
+  <div class="cart-body" id="cartBody">
+    <!-- Preenchido pelo cart.js -->
+  </div>
+
+  <div class="cart-footer" id="cartFooter" style="display:none">
+    <div class="cart-subtotal">
+      <span>Subtotal</span>
+      <span class="cart-subtotal-val" id="cartSubtotal">R$ 0,00</span>
+    </div>
+    <p class="cart-frete-info">🚚 Frete grátis em todos os produtos</p>
+
+    <a class="btn-whatsapp" id="cartWhatsapp"
+       href="#" target="_blank" rel="noopener noreferrer">
+      <!-- WhatsApp icon -->
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94
+        1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198
+        0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077
+        4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421
+        7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45
+        4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437
+        9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547
+        4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335
+        11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+      Finalizar pelo WhatsApp
+    </a>
+
+    <button class="btn-continue-shopping" id="btnContinueShopping">
+      ← Continuar comprando
+    </button>
+  </div>
+</aside>
+
+<!-- ═══════════════════════════════════════
+     HEADER
+═══════════════════════════════════════ -->
+<header class="site-header">
+  <div class="header-top">
+
+    <!-- Esquerda: busca + menu mobile -->
+    <div class="header-left">
+      <button class="icon-btn" id="btnSearch" aria-label="Abrir busca" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="11" cy="11" r="7.5"/>
+          <line x1="16.5" y1="16.5" x2="22" y2="22"/>
+        </svg>
+      </button>
+      <button class="btn-menu icon-btn" id="btnMenu"
+              aria-label="Abrir menu" aria-expanded="false" aria-controls="siteNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Centro: Logo -->
+   <div class="site-logo">
+  <a href="index.html" aria-label="Versos de Prata — Página inicial">
+    <img src="Fotos VP/LOGO/IMG_1408.PNG" class="logo-svg" alt="Versos de Prata Logo">
+  </a>
+</div>
+
+    <!-- Direita: carrinho -->
+    <div class="header-right">
+      <div class="cart-wrapper" role="button" tabindex="0"
+           aria-label="Abrir carrinho" aria-haspopup="true">
+        <button class="icon-btn btn-cart" aria-label="Ver carrinho">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 01-8 0"/>
+          </svg>
+        </button>
+        <span class="cart-badge" id="cartBadge" style="display:none"
+              aria-live="polite" aria-label="Itens no carrinho">0</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navegação principal -->
+  <nav class="site-nav" id="siteNav" aria-label="Navegação principal">
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="produtos.html">Produtos</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ═══════════════════════════════════════
+     CONTEÚDO PRINCIPAL
+═══════════════════════════════════════ -->
+<main>
+
+  <!-- Seção Destaques -->
+  <section class="section-destaques">
+    <div class="container">
+      <h2 class="section-title">Destaques</h2>
+
+      <!-- Grid preenchido pelo app.js via render.js -->
+      <div class="destaques-grid" id="destaquesGrid"></div>
+
+      <div class="section-cta">
+        <a href="produtos.html" class="btn-outline">Ver todos os produtos</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ═══════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <img src="Fotos VP/LOGO/IMG_1408.PNG" class="footer-logo" alt="Versos de Prata Logo">
+
+    <nav class="footer-nav" aria-label="Links do rodapé">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+
+    <p class="footer-copy">© 2025 Versos de Prata. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<!-- Cookie banner -->
+<div class="cookie-banner" id="cookieBanner" style="display:none" role="alert">
+  <p>Ao navegar por este site <strong>você aceita o uso de cookies</strong> para agilizar sua experiência de compra.</p>
+  <button class="btn-cookie" id="cookieAccept">Entendi</button>
+</div>
+
+<!-- ═══════════════════════════════════════
+     SCRIPTS — ordem importa!
+═══════════════════════════════════════ -->
+<script src="data/produtos.js"></script>
+<script src="js/render.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/search.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>

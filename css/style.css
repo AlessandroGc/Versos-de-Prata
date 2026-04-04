@@ -203,7 +203,10 @@ input, textarea { font-family: inherit; }
 
 .search-box {
   width: 100%; max-width: 580px;
-  padding: 0 24px; position: relative;
+  padding: 0 24px;
+}
+.search-input-row {
+  position: relative;
 }
 .search-box input {
   width: 100%; border: none;
@@ -215,10 +218,15 @@ input, textarea { font-family: inherit; }
 }
 .search-box input::placeholder { color: #bbb; font-style: italic; }
 .search-close {
-  position: absolute; right: 24px; top: 50%;
+  position: absolute; right: 0; top: 50%;
   transform: translateY(-50%);
   font-size: 20px; color: var(--black); line-height: 1;
   background: none; border: none; cursor: pointer;
+  width: 28px; height: 28px;
+  display: flex; align-items: center; justify-content: center;
+}
+.search-close:hover {
+  opacity: .6;
 }
 
 /* Resultados inline na overlay */
@@ -382,6 +390,17 @@ input, textarea { font-family: inherit; }
   color: var(--black);
 }
 .search-inline input::placeholder { color: #bbb; }
+.search-inline input::-webkit-search-decoration,
+.search-inline input::-webkit-search-cancel-button,
+.search-inline input::-webkit-search-results-button,
+.search-inline input::-webkit-search-results-decoration,
+.search-box input::-webkit-search-decoration,
+.search-box input::-webkit-search-cancel-button,
+.search-box input::-webkit-search-results-button,
+.search-box input::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+  appearance: none;
+}
 
 /* Filtros por categoria */
 .filter-bar {
@@ -493,6 +512,54 @@ input, textarea { font-family: inherit; }
 
 /* Qty + Comprar */
 .comprar-row { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+
+.produto-size-block {
+  margin-bottom: 24px;
+}
+.produto-size-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.produto-size-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--gray-text);
+}
+.produto-size-selected {
+  font-size: 13px;
+  color: var(--black);
+}
+.produto-size-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.size-btn {
+  min-width: 54px;
+  padding: 12px 16px;
+  border: 1px solid var(--gray-mid);
+  background: linear-gradient(180deg, #fff 0%, #f8f8f8 100%);
+  color: var(--black);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .04em;
+  transition: all var(--transition);
+}
+.size-btn:hover {
+  border-color: var(--black);
+  transform: translateY(-1px);
+}
+.size-btn.active {
+  background: var(--black);
+  color: var(--white);
+  border-color: var(--black);
+  box-shadow: var(--shadow-sm);
+}
 
 .qty-ctrl {
   display: flex; align-items: center;
@@ -622,6 +689,12 @@ input, textarea { font-family: inherit; }
 }
 .cart-item-price { font-size: 13px; color: var(--gray-text); margin-bottom: 10px; }
 
+.cart-item-size {
+  font-size: 12px;
+  color: var(--gray-text);
+  margin-bottom: 4px;
+}
+
 /* Qty inline no carrinho */
 .cart-item-qty {
   display: flex; align-items: center; gap: 0;
@@ -642,14 +715,6 @@ input, textarea { font-family: inherit; }
   display: flex; align-items: center; justify-content: center;
   user-select: none;
 }
-
-.btn-remove-item {
-  flex-shrink: 0; align-self: flex-start;
-  padding: 4px; color: var(--gray-text);
-  font-size: 18px; line-height: 1;
-  transition: color var(--transition);
-}
-.btn-remove-item:hover { color: #c0392b; }
 
 /* Footer do painel */
 .cart-footer {
@@ -873,6 +938,13 @@ input, textarea { font-family: inherit; }
   .produtos-controls { flex-direction: column; align-items: stretch; }
   .search-inline { max-width: 100%; }
   .filter-bar { justify-content: flex-start; }
+  .search-results-overlay {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .search-result-item {
+    align-items: flex-start;
+  }
 
   .site-footer { padding: 36px 20px 28px; }
 }
@@ -980,4 +1052,25 @@ body {
     display: none !important;
   }
 
+  .filter-bar {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 6px;
+  }
+
+  .btn-cat {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 11px;
+    letter-spacing: .02em;
+  }
+
+  .search-box {
+    padding: 0 18px;
+  }
+
+  .search-box input {
+    font-size: 17px;
+    padding-right: 34px;
+  }
 }

@@ -15,9 +15,11 @@
 <!-- Search Overlay -->
 <div class="search-overlay" id="searchOverlay" role="search">
   <div class="search-box">
-    <input type="search" id="searchInput" placeholder="Pesquisar produtos..."
-           autocomplete="off" aria-label="Campo de busca"/>
-    <button class="search-close" id="searchClose" aria-label="Fechar busca">✕</button>
+    <div class="search-input-row">
+      <input type="text" id="searchInput" placeholder="Pesquisar produtos..."
+             autocomplete="off" aria-label="Campo de busca"/>
+      <button class="search-close" id="searchClose" aria-label="Fechar busca">✕</button>
+    </div>
     <div class="search-results-overlay" id="searchResultsOverlay"></div>
   </div>
 </div>
@@ -99,7 +101,7 @@
           <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
             <circle cx="11" cy="11" r="7.5"/><line x1="16.5" y1="16.5" x2="22" y2="22"/>
           </svg>
-          <input type="search" id="searchProdutos" placeholder="Buscar produto..." autocomplete="off"/>
+          <input type="text" id="searchProdutos" placeholder="Buscar produto..." autocomplete="off"/>
         </label>
 
         <div class="filter-bar">

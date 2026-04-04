@@ -20,12 +20,14 @@ const Render = (function () {
   function cardHTML(produto, showAddBtn = true) {
     const img = produto.imagens[0] || '';
     const preco = formatBRL(produto.preco);
+    const hasSizes = Boolean(produto.tamanho?.enabled && produto.tamanho?.options?.length);
     const addBtn = showAddBtn
       ? `<div class="product-card-actions">
            <button class="btn-add-card"
                    data-id="${produto.id}"
+                   data-has-sizes="${hasSizes ? 'true' : 'false'}"
                    aria-label="Adicionar ao carrinho">
-             + Adicionar ao carrinho
+             ${hasSizes ? 'Escolher tamanho' : '+ Adicionar ao carrinho'}
            </button>
          </div>`
       : '';
@@ -132,6 +134,10 @@ const Render = (function () {
         const id = btn.dataset.id;
         const produto = (window.PRODUTOS || []).find(p => p.id === id);
         if (produto) {
+          if (btn.dataset.hasSizes === 'true') {
+            window.location.href = `produto.html?id=${encodeURIComponent(produto.id)}`;
+            return;
+          }
           Cart.add(produto, 1);
         }
       });

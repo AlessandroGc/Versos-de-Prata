@@ -239,23 +239,17 @@ const Cart = (function () {
   function buildWhatsAppLink() {
     if (items.length === 0) return '#';
 
-    const linhas = items.map(({ produto, quantidade, tamanho }) => [
-      `Produto: ${produto.nome}`,
-      `Tamanho: ${getTamanhoLabel(tamanho)}`,
-      `Quantidade: ${quantidade}`,
-      ''
-    ].join('\n')).join('\n');
+    const linhas = items.map(({ produto, quantidade, tamanho }) => {
+      const tamanhoTexto = tamanho ? ` (tam. ${getTamanhoLabel(tamanho)})` : '';
+      return `* ${produto.nome}${tamanhoTexto} - ${quantidade} un`;
+    }).join('\n');
 
     const mensagem = [
-      'Ol\u00e1! Gostaria de fazer um pedido:',
+      'Ol\u00e1! Quero fazer um pedido:',
       '',
-      'Produtos selecionados:',
+      linhas,
       '',
-      linhas.trim(),
-      '',
-      'Poderia me informar disponibilidade e prazo de entrega?',
-      '',
-      'Obrigada!'
+      'Poderia me informar quais s\u00e3o os m\u00e9todos de pagamento e o prazo de entrega?'
     ].join('\n');
 
     return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(mensagem)}`;

@@ -21,12 +21,18 @@ window.PRODUTOS = [
     categoria: "anel",
     destaque: true,
     estoque: 1,
-    tamanho: { enabled: true, options: [14, 16, 18, 20] },
+    tamanho: { enabled: true, options: [17] },
     imagens: [
       "Fotos VP/ANEIS/Anel de Prata 925 Ponto de Luz Coração Azul Bebê.webp",
       "Fotos VP/ANEIS/Anel de Prata 925 Ponto de Luz Coração Azul Bebê 2.webp"
     ],
-    descricao: "Anel delicado em prata 925 com pedra no formato de coração em tom azul bebê. Perfeito para o dia a dia, combina com qualquer look. Material: Prata 925 com banho de ródio. Pedra: Zircônia azul bebê. Tamanhos: 14, 16, 18, 20."
+    descricao: `✨ Delicado e cheio de significado, o Anel Ponto de Luz com coração azul é a escolha perfeita para quem ama joias românticas e elegantes.
+    Seu design minimalista traz um brilho sutil e sofisticado, ideal para valorizar qualquer look, do dia a dia a ocasiões especiais.<br><br>
+    Especificações: <br>
+    • Material: Prata 925<br>
+    • Gênero: Feminino<br>
+    `
+    
   },
 
   {
@@ -40,7 +46,14 @@ window.PRODUTOS = [
     imagens: [
       "Fotos VP/ANEIS/Anel de Prata 925 Solitário Curvado Zircônia Central (18).webp"
     ],
-    descricao: "Anel solitário com banda levemente curvada e zircônia central lapidada. Design atemporal e sofisticado. Material: Prata 925 com banho de ródio. Pedra: Zircônia branca."
+    descricao: `✨ Elegante e atemporal, o Anel Solitário Curvado é a escolha perfeita para quem ama joias delicadas com um toque moderno. Seu design curvado valoriza ainda mais a zircônia central, criando um brilho sofisticado e sutil que chama atenção na medida certa.<br>
+    Ideal para usar sozinho ou combinar com outros anéis, essa peça traz leveza, estilo e versatilidade para qualquer ocasião, do dia a dia a momentos especiais.<br><br>
+
+    📏 Especificações:<br>
+    • Material: Prata 925<br>
+    • Pedra: Zircônia<br>
+    • Peso: 0,75g<br>
+    • Gênero: Feminino`
   },
 
   {
@@ -55,7 +68,12 @@ window.PRODUTOS = [
       "Fotos VP/ANEIS/Anel de Prata 925 Mini Corações Lisos 2.webp",
       "Fotos VP/ANEIS/Anel de Prata 925 Mini Corações Lisos 17.webp"
     ],
-    descricao: "Anel com mini corações lisos distribuídos no aro. Design romântico e delicado, ideal para looks femininos. Material: Prata 925."
+    descricao: `✨ Delicado e cheio de charme, o Anel de Prata 925 com mini corações lisos é perfeito para quem ama joias românticas e minimalistas. Seu design com pequenos corações traz um toque sutil de amor e elegância, ideal para compor looks leves e sofisticados.<br><br>
+
+    📏 Especificações:<br>
+    • Material: Prata 925<br>
+    • Acabamento: Corações lisos<br>
+    • Gênero: Feminino`
   },
 
   {
@@ -70,7 +88,12 @@ window.PRODUTOS = [
       "Fotos VP/ANEIS/Anel de Prata 925 Torcido Estrela Lisa (18) 2.webp",
       "Fotos VP/ANEIS/Anel de Prata 925 Torcido Estrela Lisa (18).webp"
     ],
-    descricao: "Sem descrição."
+    descricao:  `✨ Delicado e cheio de estilo, o Anel de Prata 925 Torcido com Estrela Lisa é a escolha perfeita para quem ama joias minimalistas com um toque moderno. Seu aro torcido traz um design diferenciado, enquanto a estrela lisa simboliza luz, proteção e boas energias.<br><br>
+   
+    📏 Especificações:<br>
+    • Material: Prata 925<br>
+    • Gênero: Feminino<br>
+    • Peso: 1g`
   },
 
   {
@@ -84,7 +107,13 @@ window.PRODUTOS = [
     imagens: [
       "Fotos VP/ANEIS/Anel de Prata 925 Coração Zircônia Solitário (18).webp"
     ],
-    descricao: "Sem descrição."
+    descricao: `✨ Delicado e cheio de significado, o Anel de Prata 925 Coração com Zircônia Solitário é a escolha ideal para quem ama joias românticas e elegantes. Sua pedra em formato de coração traz um brilho intenso e sofisticado, simbolizando amor, carinho e momentos especiais.<br><br>
+    
+    📏 Especificações:<br>
+    • Material: Prata 925<br>
+    • Pedra: Zircônia<br>
+    • Peso: 1,3g<br>
+    • Gênero: Feminino`
   },
 
   /* ========================
@@ -100,7 +129,13 @@ window.PRODUTOS = [
     imagens: [
       "Fotos VP/PULSEIRAS/Pulseira de Prata 925 Zircônias Azuis.webp"
     ],
-    descricao: "Pulseira elegante em prata 925 com zircônias azuis lapidadas. Perfeita para ocasiões especiais. Comprimento: 18 cm + 3 cm de extensão."
+    descricao: `✨ Elegante e sofisticada, a Pulseira de Prata 925 com Zircônias Azuis é perfeita para quem busca um acessório delicado com um toque de cor e brilho. Suas pedras azuis refletem a luz de forma encantadora, trazendo destaque e refinamento ao visual.<br><br>
+    
+    📏 Especificações:<br>
+    • Material: Prata 925<br>
+    • Pedra: Zircônias azuis<br>
+    • Tamanho: Pulseira (18cm) / Espessura (2mm) / Zircônias (2mm) <br>
+    • Gênero: Feminino`
   },
 
   {
@@ -113,7 +148,13 @@ window.PRODUTOS = [
     imagens: [
       "Fotos VP/PULSEIRAS/Pulseira de Prata 925 Ponto de Luz Coração Vermelho Central.webp"
     ],
-    descricao: "Pulseira delicada em prata 925 com pingente ponto de luz no formato de coração em zircônia vermelha. Simboliza amor e paixão."
+    descricao: `✨ Delicada e cheia de significado, a Pulseira de Prata 925 com Ponto de Luz e Coração Vermelho Central é perfeita para quem ama joias românticas e elegantes. O destaque fica por conta do coração em zircônia vermelha, que traz um brilho intenso e simboliza amor, paixão e momentos especiais.<br><br>
+    
+    📏 Especificações:<br>
+    • Material: Prata 925<br>
+    • Pedra: Zircônia vermelha<br>
+    • Tamanho: Pulseira (18cm) / Ponto de Luz (6mm)<br>
+    • Gênero: Feminino`
   },
 
   {
@@ -126,7 +167,12 @@ window.PRODUTOS = [
     imagens: [
       "Fotos VP/PULSEIRAS/Pulseira de Prata 925 Ponto de Luz Coração Branco Central.webp"
     ],
-    descricao: "Pulseira delicada em prata 925 com pingente ponto de luz no formato de coração em zircônia branca. Elegância e simplicidade."
+    descricao: `✨ Delicada e sofisticada, a Pulseira de Prata 925 com Ponto de Luz e Coração Branco Central é perfeita para quem ama joias elegantes e atemporais. O coração em zircônia branca traz um brilho intenso e cristalino, transmitindo pureza, leveza e sofisticação.<br><br>
+    
+    • Material: Prata 925<br>
+    • Pedra: Zircônia branca<br>
+    • Tamanho: Pulseira (18cm) / Ponto de Luz (6mm) <br>
+    • Gênero: Feminino`
   },
 
   {
@@ -141,7 +187,14 @@ window.PRODUTOS = [
       "Fotos VP/PULSEIRAS/Pulseira de Prata 925 Zircônias Redondas Penduradas Vermelhas.webp",
       "Fotos VP/PULSEIRAS/Pulseira de Prata 925 Zircônias Redondas Penduradas Vermelhas 2.webp"
     ],
-    descricao: "Sem descrição."
+    descricao: `✨ Moderna e cheia de personalidade, a Pulseira de Prata 925 com Zircônias Redondas Vermelhas Penduradas é perfeita para quem busca um acessório delicado, mas com destaque. Suas pedras vermelhas criam um efeito de movimento e brilho intenso, trazendo um toque sofisticado e marcante ao visual.<br><br>
+   
+    📏 Especificações:<br>
+    • Material: Prata 925<br>
+    • Pedra: Zircônias vermelhas<br>
+    • Comprimento: Pulseira (18cm) / Espessura (2mm) / Zircônias (6mm) <br>
+    • Quantidade: 05 pingentes<br>
+    • Gênero: Feminino`
   },
 
   {
@@ -155,7 +208,14 @@ window.PRODUTOS = [
       "Fotos VP/PULSEIRAS/Pulseira de Prata 925 Corações Pendurados Brancos 1.webp",
       "Fotos VP/PULSEIRAS/Pulseira de Prata 925 Corações Pendurados Brancos 2.webp"
     ],
-    descricao: "Sem descrição."
+    descricao: `✨ Delicada e cheia de charme, a Pulseira de Prata 925 com Corações Brancos Pendurados é perfeita para quem ama joias românticas e minimalistas. Seus pequenos corações criam um efeito leve e elegante, trazendo um toque de amor e sofisticação ao visual.<br><br>
+  
+    📏 Especificações:<br>
+    • Material: Prata 925<br>
+    • Tamanho: Tamanho: Pulseira (18cm) / Espessura (2mm) / Corações (7mm) <br>
+    • Pingentes: Corações brancos<br>
+    • Quantidade: 05 pingentes<br>
+    • Gênero: Feminino`
   },
 
   {
@@ -169,7 +229,11 @@ window.PRODUTOS = [
       "Fotos VP/PULSEIRAS/Pulseira de Prata 925 Mini Corações 1.webp",
       "Fotos VP/PULSEIRAS/Pulseira de Prata 925 Mini Corações 2.webp"
     ],
-    descricao: "Sem descrição."
+    descricao: `✨ Delicada e cheia de significado, a Pulseira de Prata 925 Mini Corações é perfeita para quem ama joias românticas e minimalistas. Seus pequenos corações interligados criam um visual leve e encantador, trazendo um toque de amor e sofisticação ao look.<br><br>
+    📏 Especificações:<br>
+    • Material: Prata 925<br>
+    • Tamanho: Pulseira (18cm) / Espessura (3mm)
+    • Gênero: Feminino`
   },
 
   /* ========================
@@ -186,7 +250,12 @@ window.PRODUTOS = [
       "Fotos VP/COLARES/Colar de Prata 925 Ponto de Luz Coração 2.webp",
       "Fotos VP/COLARES/Colar de Prata 925 Ponto de Luz Coração.webp"
     ],
-    descricao: "Colar delicado em prata 925 com pingente ponto de luz no formato de estrela com zircônia central. Comprimento: 45 cm + 5 cm de extensão."
+    descricao: `✨ Delicado e cheio de significado, o Colar de Prata 925 com Ponto de Luz em formato de Coração é a escolha perfeita para quem ama joias elegantes e românticas. Seu brilho sutil destaca o colo com sofisticação, simbolizando amor, carinho e momentos especiais.<br><br>
+    📏 Especificações:<br>
+    • Material: Prata 925<br>
+    • Pedra: Zircônia (ponto de luz)<br>
+    • Tamanho:  Colar (45cm) / Pingente (5mm) <br>
+    • Gênero: Feminino`
   },
 
   {
@@ -200,8 +269,15 @@ window.PRODUTOS = [
       "Fotos VP/COLARES/Colar de Prata 925 Ponto de Luz Coração Vermelho.webp",
       "Fotos VP/COLARES/Colar de Prata 925 Ponto de Luz Coração Vermelho 2.webp"
     ],
-    descricao: "Colar minimalista com pingente de coração liso em prata 925. Um clássico que nunca sai de moda. Comprimento: 45 cm."
-  },
+
+    descricao: `✨ Delicado e cheio de significado, o Colar de Prata 925 com Ponto de Luz em formato de Coração Vermelho é a escolha perfeita para quem ama joias românticas e marcantes. Seu brilho intenso destaca o colo com elegância, simbolizando amor, paixão e momentos especiais.<br><br>
+    
+    📏 Especificações:<br>
+    • Material: Prata 925<br>
+    • Pedra: Zircônia vermelha<br>
+    • Tamanho: Colar (45cm) / Pingente (7mm)
+    • Gênero: Feminino`  
+},
 
   {
     id: "Colar-de-Prata-925-Ponto-de-Luz-Gota-Branca-Delicada",
@@ -214,7 +290,12 @@ window.PRODUTOS = [
       "Fotos VP/COLARES/Colar de Prata 925 Ponto de Luz Gota Branca Delicada.jpg",
       "Fotos VP/COLARES/Colar de Prata 925 Ponto de Luz Gota Branca Delicada 2.webp"
     ],
-    descricao: "Sem descrição."
+    descricao:  `✨ Delicado e sofisticado, o Colar de Prata 925 com Ponto de Luz em formato de Gota Branca é perfeito para quem ama joias minimalistas com brilho elegante. Seu pingente em formato de gota reflete a luz de forma suave, trazendo leveza, pureza e sofisticação ao visual.<br><br>
+    📏 Especificações:<br>
+    • Material: Prata 925<br>
+    • Pedra: Zircônia branca<br>
+    • Tamanho: Colar (45cm) / Pingente (5mm x 7mm)
+    • Gênero: Feminino`
   },
 
   /* ========================
@@ -248,6 +329,11 @@ window.PRODUTOS = [
       "Fotos VP/CONJUNTOS/Conjunto de Prata 925 Ponto de Luz Grande Branco Brinco.webp",
       "Fotos VP/CONJUNTOS/Conjunto de Prata 925 Ponto de Luz Grande Branco 2.webp"
     ],
-    descricao: "Conjunto completo em prata 925 composto por colar e brinco ponto de luz grande com zircônia branca lapidada. Perfeito para presentear. Acompanha embalagem exclusiva Versos de Prata. Comprimento do colar: 45 cm + 5 cm de extensão."
+    descricao: `✨ Elegante e atemporal, o Conjunto de Prata 925 com Ponto de Luz Grande Branco é perfeito para quem busca sofisticação com um toque minimalista. Composto por colar e brincos delicados, suas pedras em zircônia branca proporcionam um brilho intenso e refinado, valorizando qualquer look.<br><br>
+    📏 Especificações:<br>
+    • Material: Prata 925<br>
+    • Pedra: Zircônia branca<br>
+    • Tamanho: Corrente (45cm) / Brincos (5mm) / Pingente (7mm)
+    • Gênero: Feminino`
   }
 ];

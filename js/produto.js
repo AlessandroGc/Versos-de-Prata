@@ -4,7 +4,14 @@ const ProdutoPage = (function () {
 
   function init() {
     const params = new URLSearchParams(window.location.search);
-    const id = params.get('id');
+    const idFromURL = params.get('id');
+    let lastProductId = null;
+
+    try {
+      lastProductId = sessionStorage.getItem('vdp_last_product_id');
+    } catch (error) {}
+
+    const id = idFromURL || lastProductId;
 
     if (!id) {
       redirectNotFound();
@@ -12,6 +19,12 @@ const ProdutoPage = (function () {
     }
 
     const produto = (window.PRODUTOS || []).find(p => p.id === id);
+
+    if (produto && idFromURL) {
+      try {
+        sessionStorage.setItem('vdp_last_product_id', idFromURL);
+      } catch (error) {}
+    }
 
     if (!produto) {
       redirectNotFound();
@@ -27,7 +40,7 @@ const ProdutoPage = (function () {
     document.getElementById('produtoConteudo').innerHTML = `
       <div class="empty-state" style="padding:80px 20px">
         <p>Produto n\u00e3o encontrado.</p>
-        <a href="/produtos" class="btn-outline" style="margin-top:24px;display:inline-block">
+        <a href="/produtos/" class="btn-outline" style="margin-top:24px;display:inline-block">
           Ver todos os produtos
         </a>
       </div>`;
@@ -81,7 +94,7 @@ const ProdutoPage = (function () {
       <nav class="breadcrumb" aria-label="Navega\u00e7\u00e3o estrutural">
         <a href="/">In\u00edcio</a>
         <span class="sep">\u203a</span>
-        <a href="/produtos?cat=${produto.categoria}">${capitalize(produto.categoria)}s</a>
+        <a href="/produtos/?cat=${encodeURIComponent(produto.categoria)}">${getCategoryLabel(produto.categoria)}</a>
         <span class="sep">\u203a</span>
         <span class="current">${produto.nome}</span>
       </nav>
@@ -231,8 +244,16 @@ const ProdutoPage = (function () {
     if (metaDesc) metaDesc.content = produto.descricao.substring(0, 155);
   }
 
-  function capitalize(value) {
-    return value.charAt(0).toUpperCase() + value.slice(1);
+  function getCategoryLabel(value) {
+    const labels = {
+      anel: 'Anéis',
+      pulseira: 'Pulseiras',
+      colar: 'Colares',
+      brinco: 'Brincos',
+      conjunto: 'Conjuntos'
+    };
+
+    return labels[value] || (value.charAt(0).toUpperCase() + value.slice(1));
   }
 
   return { init };

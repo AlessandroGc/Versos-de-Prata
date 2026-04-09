@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <base href="/">
+  <meta name="description" content="Versos de Prata — nosso site oficial será lançado em breve. Aguarde novidades e fale conosco pelo WhatsApp."/>
+  <title>Em breve — Versos de Prata</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+
+  <style>
+    body {
+      background: #ffffff;
+    }
+
+    .page-em-breve {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 28px 0;
+      background: #ffffff;
+    }
+
+    .coming-layout {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 0 40px;
+      display: grid;
+      grid-template-columns: minmax(280px, 390px) minmax(320px, 560px);
+      gap: 72px;
+      align-items: center;
+    }
+
+    .coming-copy {
+      max-width: 350px;
+    }
+
+    .coming-brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 26px;
+    }
+
+    .coming-brand img {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+    }
+
+    .coming-brand span {
+      font-size: 10px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--black);
+    }
+
+    .coming-kicker {
+      font-size: 10px;
+      letter-spacing: 0.26em;
+      text-transform: uppercase;
+      color: var(--gray-text);
+      margin-bottom: 14px;
+    }
+
+    .coming-title {
+      font-size: clamp(2.25rem, 4.6vw, 3.5rem);
+      line-height: 0.98;
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      margin-bottom: 18px;
+      max-width: 290px;
+    }
+
+    .coming-text {
+      font-size: 14px;
+      line-height: 1.8;
+      color: var(--gray-text);
+      margin-bottom: 10px;
+      max-width: 320px;
+    }
+
+    .coming-note {
+      margin: 16px 0 26px;
+      font-family: var(--font-serif);
+      font-size: 21px;
+      font-style: italic;
+      color: var(--black);
+    }
+
+    .hero-whatsapp {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-width: 210px;
+      padding: 13px 22px;
+      background: #1a1a1a;
+      color: #ffffff;
+      border: 1px solid #1a1a1a;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      transition: all var(--transition);
+    }
+
+    .hero-whatsapp svg {
+      width: 15px;
+      height: 15px;
+      fill: currentColor;
+    }
+
+    .hero-whatsapp:hover {
+      background: transparent;
+      color: var(--black);
+    }
+
+    .coming-visual {
+      margin: 0;
+      background: #f5eef1;
+      min-height: 620px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 28px;
+    }
+
+    .coming-visual img {
+      width: 100%;
+      max-width: 430px;
+      height: auto;
+      object-fit: contain;
+      mix-blend-mode: multiply;
+    }
+
+    @media (max-width: 900px) {
+      .coming-layout {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        padding: 20px 22px 40px;
+      }
+
+      .coming-copy {
+        max-width: none;
+        order: 1;
+      }
+
+      .coming-title,
+      .coming-text {
+        max-width: none;
+      }
+
+      .coming-visual {
+        order: 2;
+        min-height: auto;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<main class="page-em-breve">
+  <div class="coming-layout">
+    <section class="coming-copy" aria-labelledby="comingTitle">
+      <div class="coming-brand">
+        <img src="Fotos VP/LOGO/IMG_1408.PNG" alt="Versos de Prata Logo"/>
+        <span>Versos de Prata</span>
+      </div>
+
+      <p class="coming-kicker">Lançamento oficial</p>
+      <h1 class="coming-title" id="comingTitle">Estamos quase prontos.</h1>
+
+      <p class="coming-text">
+        O site oficial da <strong>Versos de Prata</strong> ainda não foi lançado, mas falta muito pouco.
+      </p>
+      <p class="coming-text">
+        Estamos preparando cada detalhe com carinho para apresentar uma experiência delicada, elegante e à altura da marca. Aguarde mais um pouco.
+      </p>
+
+      <p class="coming-note">Em breve, uma nova vitrine para você.</p>
+
+      <a class="hero-whatsapp"
+         href="https://wa.me/5593984178850?text=Ol%C3%A1!%20Gostaria%20de%20acompanhar%20o%20lan%C3%A7amento%20da%20Versos%20de%20Prata."
+         target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/>
+        </svg>
+        Falar pelo WhatsApp
+      </a>
+    </section>
+
+    <figure class="coming-visual">
+      <img src="Fotos VP/ANEIS/Anel de Prata 925 Solitário Curvado Zircônia Central (18).webp" alt="Anel de Prata 925 Solitário Curvado Zircônia Central"/>
+    </figure>
+  </div>
+</main>
+
+</body>
+</html>

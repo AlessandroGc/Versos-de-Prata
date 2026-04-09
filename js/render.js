@@ -12,6 +12,16 @@ const Render = (function () {
     return v.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
   }
 
+  function buildProductURL(produtoId) {
+    return `/produto/?id=${encodeURIComponent(produtoId)}`;
+  }
+
+  function rememberLastProduct(produtoId) {
+    try {
+      sessionStorage.setItem('vdp_last_product_id', produtoId);
+    } catch (error) {}
+  }
+
   /**
    * Gera o HTML de um card de produto.
    * @param {Object} produto - objeto do catálogo
@@ -34,7 +44,7 @@ const Render = (function () {
 
     return `
       <article class="product-card fade-in" role="article">
-        <a href="/produto?id=${produto.id}" class="product-card-link">
+        <a href="${buildProductURL(produto.id)}" class="product-card-link" data-product-id="${produto.id}">
           <div class="product-img-wrap">
             <span class="badge-frete">Frete grátis</span>
             <img
@@ -80,6 +90,7 @@ const Render = (function () {
 
     container.innerHTML = lista.map(p => cardHTML(p)).join('');
     initLazyLoad();
+    bindProductLinks(container);
     bindAddButtons(container);
   }
 
@@ -121,6 +132,18 @@ const Render = (function () {
     }
   }
 
+  function bindProductLinks(scope) {
+    scope = scope || document;
+    scope.querySelectorAll('.product-card-link').forEach(link => {
+      link.addEventListener('click', () => {
+        const produtoId = link.dataset.productId;
+        if (produtoId) {
+          rememberLastProduct(produtoId);
+        }
+      });
+    });
+  }
+
   /**
    * Vincula os botões "Adicionar ao carrinho" dos cards ao Cart.
    * @param {HTMLElement} scope - container pai (para não re-buscar no document todo)
@@ -135,7 +158,8 @@ const Render = (function () {
         const produto = (window.PRODUTOS || []).find(p => p.id === id);
         if (produto) {
           if (btn.dataset.hasSizes === 'true') {
-            window.location.href = `/produto?id=${encodeURIComponent(produto.id)}`;
+            rememberLastProduct(produto.id);
+            window.location.href = buildProductURL(produto.id);
             return;
           }
           Cart.add(produto, 1);

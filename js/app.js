@@ -8,18 +8,28 @@
 document.addEventListener('DOMContentLoaded', function () {
 
   /* ─── Identifica a página atual ─── */
-  const path     = window.location.pathname;
-  const pageName = path.split('/').pop().replace('.html', '') || 'index';
+  const path = window.location.pathname;
+  const normalizedPath = path.replace(/\/+$/, '').replace('.html', '');
+  const pageName = normalizedPath.split('/').pop() || 'index';
+
+  /* ─── Mantém a URL limpa, sem .html ─── */
+  if (window.history.replaceState && path.endsWith('.html')) {
+    const targetPath = normalizedPath === '/index' ? '/' : (normalizedPath || '/');
+    window.history.replaceState({}, '', `${targetPath}${window.location.search}${window.location.hash}`);
+  }
 
   /* ─── Nav: marcar link ativo ─── */
   document.querySelectorAll('.site-nav a').forEach(link => {
     const href = link.getAttribute('href') || '';
-    const name = href.replace('.html', '');
+    const name = href
+      .replace(window.location.origin, '')
+      .replace(/[?#].*$/, '')
+      .replace(/\/+$/, '')
+      .replace('.html', '')
+      .split('/')
+      .pop() || 'index';
 
-    if (
-      (name === 'index' && (pageName === 'index' || pageName === '')) ||
-      (name === pageName)
-    ) {
+    if (name === pageName) {
       link.classList.add('active');
     }
   });

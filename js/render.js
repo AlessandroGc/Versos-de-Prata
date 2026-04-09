@@ -34,7 +34,7 @@ const Render = (function () {
 
     return `
       <article class="product-card fade-in" role="article">
-        <a href="produto.html?id=${produto.id}" class="product-card-link">
+        <a href="/produto?id=${produto.id}" class="product-card-link">
           <div class="product-img-wrap">
             <span class="badge-frete">Frete grátis</span>
             <img
@@ -135,7 +135,7 @@ const Render = (function () {
         const produto = (window.PRODUTOS || []).find(p => p.id === id);
         if (produto) {
           if (btn.dataset.hasSizes === 'true') {
-            window.location.href = `produto.html?id=${encodeURIComponent(produto.id)}`;
+            window.location.href = `/produto?id=${encodeURIComponent(produto.id)}`;
             return;
           }
           Cart.add(produto, 1);

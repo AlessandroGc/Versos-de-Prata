@@ -135,7 +135,7 @@ const Search = (function () {
         }
 
         resultsEl.innerHTML = lista.map(produto => `
-          <a class="search-result-item" href="produto.html?id=${produto.id}">
+          <a class="search-result-item" href="/produto?id=${produto.id}">
             <img src="${produto.imagens[0]}" alt="${produto.nome}" loading="lazy"/>
             <div class="search-result-info">
               <p>${produto.nome}</p>
@@ -148,7 +148,7 @@ const Search = (function () {
 
     input.addEventListener('keydown', event => {
       if (event.key === 'Enter' && input.value.trim()) {
-        window.location.href = `produtos.html?q=${encodeURIComponent(input.value.trim())}`;
+        window.location.href = `/produtos?q=${encodeURIComponent(input.value.trim())}`;
       }
     });
   }

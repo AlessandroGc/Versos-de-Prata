@@ -27,7 +27,7 @@ const ProdutoPage = (function () {
     document.getElementById('produtoConteudo').innerHTML = `
       <div class="empty-state" style="padding:80px 20px">
         <p>Produto n\u00e3o encontrado.</p>
-        <a href="produtos.html" class="btn-outline" style="margin-top:24px;display:inline-block">
+        <a href="/produtos" class="btn-outline" style="margin-top:24px;display:inline-block">
           Ver todos os produtos
         </a>
       </div>`;
@@ -79,9 +79,9 @@ const ProdutoPage = (function () {
 
     container.innerHTML = `
       <nav class="breadcrumb" aria-label="Navega\u00e7\u00e3o estrutural">
-        <a href="index.html">In\u00edcio</a>
+        <a href="/">In\u00edcio</a>
         <span class="sep">\u203a</span>
-        <a href="produtos.html?cat=${produto.categoria}">${capitalize(produto.categoria)}s</a>
+        <a href="/produtos?cat=${produto.categoria}">${capitalize(produto.categoria)}s</a>
         <span class="sep">\u203a</span>
         <span class="current">${produto.nome}</span>
       </nav>

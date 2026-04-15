@@ -19,8 +19,8 @@ window.PRODUTOS = [
     nome: "Anel de Prata 925 Ponto de Luz Coração Azul Bebê",
     preco: 91.90,
     categoria: "anel",
-    destaque: true,
-    estoque: 1,
+    destaque: false,
+    estoque: 0,
     tamanho: { enabled: true, options: [17] },
     imagens: [
       "Fotos VP/ANEIS/Anel de Prata 925 Ponto de Luz Coração Azul Bebê.webp",
@@ -81,7 +81,7 @@ window.PRODUTOS = [
     nome: "Anel de Prata 925 Torcido Estrela Lisa",
     preco: 91.90,
     categoria: "anel",
-    destaque: true,
+    destaque: false,
     estoque: 1,
     tamanho: { enabled: true, options: [18] },
     imagens: [
@@ -101,7 +101,7 @@ window.PRODUTOS = [
     nome: "Anel de Prata 925 Coração Zircônia Solitário",
     preco: 119.90,
     categoria: "anel",
-    destaque: true,
+    destaque: false,
     estoque: 1,
     tamanho: { enabled: true, options: [18] },
     imagens: [
@@ -223,7 +223,7 @@ window.PRODUTOS = [
     nome: "Pulseira de Prata 925 Mini Corações",
     preco: 83.90,
     categoria: "pulseira",
-    destaque: false,
+    destaque: true,
     estoque: 1,
     imagens: [
       "Fotos VP/PULSEIRAS/Pulseira de Prata 925 Mini Corações 1.webp",
@@ -284,7 +284,7 @@ window.PRODUTOS = [
     nome: "Colar de Prata 925 Ponto de Luz Gota Branca Delicada",
     preco: 113.00,
     categoria: "colar",
-    destaque: false,
+    destaque: true,
     estoque: 1,
     imagens: [
       "Fotos VP/COLARES/Colar de Prata 925 Ponto de Luz Gota Branca Delicada.jpg",

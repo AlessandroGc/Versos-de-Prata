@@ -58,7 +58,7 @@ const ProdutoPage = (function () {
     if (produto.estoque <= 3 && produto.estoque > 0) {
       estoqueHTML = `<p class="produto-estoque-aviso urgente">\u26A0 Aten\u00e7\u00e3o, \u00faltimas ${produto.estoque} pe\u00e7a${produto.estoque > 1 ? 's' : ''}!</p>`;
     } else if (produto.estoque === 0) {
-      estoqueHTML = `<p class="produto-estoque-aviso urgente">\u2715 Produto indispon\u00edvel no momento.</p>`;
+      estoqueHTML = `<p class="produto-estoque-aviso urgente">\u2715 Produto esgotado.</p>`;
     }
 
     const thumbsHTML = produto.imagens.map((img, index) => `

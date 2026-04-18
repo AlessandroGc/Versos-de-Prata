@@ -123,7 +123,7 @@ const ProdutoPage = (function () {
         <div class="produto-info-panel">
           <h1 class="produto-nome">${produto.nome}</h1>
           <p class="produto-preco">${preco}</p>
-          <p class="produto-frete">Frete gr\u00e1tis para todo o Brasil</p>
+          <p class="produto-frete">Frete gr\u00e1tis | Santarém-PA</p>
           ${estoqueHTML}
           ${tamanhoHTML}
 

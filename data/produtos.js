@@ -232,7 +232,7 @@ window.PRODUTOS = [
     descricao: `✨ Delicada e cheia de significado, a Pulseira de Prata 925 Mini Corações é perfeita para quem ama joias românticas e minimalistas. Seus pequenos corações interligados criam um visual leve e encantador, trazendo um toque de amor e sofisticação ao look.<br><br>
     📏 Especificações:<br>
     • Material: Prata 925<br>
-    • Tamanho: Pulseira (18cm) / Espessura (3mm)
+    • Tamanho: Pulseira (18cm) / Espessura (3mm)<br>
     • Gênero: Feminino`
   },
 
@@ -275,7 +275,7 @@ window.PRODUTOS = [
     📏 Especificações:<br>
     • Material: Prata 925<br>
     • Pedra: Zircônia vermelha<br>
-    • Tamanho: Colar (45cm) / Pingente (7mm)
+    • Tamanho: Colar (45cm) / Pingente (7mm) <br>
     • Gênero: Feminino`  
 },
 
@@ -294,7 +294,7 @@ window.PRODUTOS = [
     📏 Especificações:<br>
     • Material: Prata 925<br>
     • Pedra: Zircônia branca<br>
-    • Tamanho: Colar (45cm) / Pingente (5mm x 7mm)
+    • Tamanho: Colar (45cm) / Pingente (5mm x 7mm) <br>
     • Gênero: Feminino`
   },
 
@@ -311,7 +311,13 @@ window.PRODUTOS = [
     imagens: [
       "Fotos VP/BRINCOS/Trio de Brincos Prata 925 Coruja, Ponto de Luz e Corações.webp"
     ],
-    descricao: "Sem descrição."
+    descricao: ` ✨ Encante-se com este trio de brincos em Prata 925! O conjunto inclui um par delicado em formato de corações, um par adorável de corujas e um par de pontos de luz brilhantes. Perfeitos para adicionar um toque de charme e sofisticação ao seu visual, seja no dia a dia ou em ocasiões especiais. Uma joia versátil que combina com todos os estilos.<br><br>
+    📏 Especificações:<br>
+    • Material: Prata 925<br>
+    • Design: Corujas, Corações e Pontos de Luz<br>
+    • Tamanho: Corujas  (0,5cm) / Corações (4mm) / Pontos de Luz (1cm)<br>
+    • Gênero: Feminino`
+    
   },
 
   /* ========================

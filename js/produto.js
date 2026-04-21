@@ -72,8 +72,7 @@ const ProdutoPage = (function () {
     const tamanhoHTML = hasSizes ? `
       <div class="produto-size-block">
         <div class="produto-size-header">
-          <span class="produto-size-label">Tamanho</span>
-          <span class="produto-size-selected" id="sizeSelected">${selectedSize}</span>
+          <span class="produto-size-label">Tamanho: <span class="produto-size-selected" id="sizeSelected">${selectedSize}</span></span>
         </div>
         <div class="produto-size-options">
           ${produto.tamanho.options.map((size, index) => `

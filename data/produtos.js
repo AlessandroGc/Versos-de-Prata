@@ -134,7 +134,7 @@ window.PRODUTOS = [
     📏 Especificações:<br>
     • Material: Prata 925<br>
     • Pedra: Zircônias azuis<br>
-    • Tamanho: Pulseira (18cm) / Espessura (2mm) / Zircônias (2mm) <br>
+    • Tamanho: Pulseira (18cm) / Espessura (2mm) / Zircônias (2mm)<br>
     • Gênero: Feminino`
   },
 
@@ -171,7 +171,7 @@ window.PRODUTOS = [
     
     • Material: Prata 925<br>
     • Pedra: Zircônia branca<br>
-    • Tamanho: Pulseira (18cm) / Ponto de Luz (6mm) <br>
+    • Tamanho: Pulseira (18cm) / Ponto de Luz (6mm)<br>
     • Gênero: Feminino`
   },
 
@@ -254,7 +254,7 @@ window.PRODUTOS = [
     📏 Especificações:<br>
     • Material: Prata 925<br>
     • Pedra: Zircônia (ponto de luz)<br>
-    • Tamanho:  Colar (45cm) / Pingente (5mm) <br>
+    • Tamanho:  Colar (45cm) / Pingente (5mm)<br>
     • Gênero: Feminino`
   },
 
@@ -275,7 +275,7 @@ window.PRODUTOS = [
     📏 Especificações:<br>
     • Material: Prata 925<br>
     • Pedra: Zircônia vermelha<br>
-    • Tamanho: Colar (45cm) / Pingente (7mm) <br>
+    • Tamanho: Colar (45cm) / Pingente (7mm)<br>
     • Gênero: Feminino`  
 },
 
@@ -294,7 +294,7 @@ window.PRODUTOS = [
     📏 Especificações:<br>
     • Material: Prata 925<br>
     • Pedra: Zircônia branca<br>
-    • Tamanho: Colar (45cm) / Pingente (5mm x 7mm) <br>
+    • Tamanho: Colar (45cm) / Pingente (5mm x 7mm)<br>
     • Gênero: Feminino`
   },
 
@@ -339,7 +339,7 @@ window.PRODUTOS = [
     📏 Especificações:<br>
     • Material: Prata 925<br>
     • Pedra: Zircônia branca<br>
-    • Tamanho: Corrente (45cm) / Brincos (5mm) / Pingente (7mm)
+    • Tamanho: Corrente (45cm) / Brincos (5mm) / Pingente (7mm)<br>
     • Gênero: Feminino`
   }
 ];

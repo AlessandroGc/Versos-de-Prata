@@ -329,7 +329,7 @@ window.PRODUTOS = [
     preco: 139.90,
     categoria: "conjunto",
     destaque: false,
-    estoque: 1,
+    estoque: 0,
     imagens: [
       "Fotos VP/CONJUNTOS/Conjunto de Prata 925 Ponto de Luz Grande Branco.webp",
       "Fotos VP/CONJUNTOS/Conjunto de Prata 925 Ponto de Luz Grande Branco Brinco.webp",

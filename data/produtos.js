@@ -285,7 +285,7 @@ window.PRODUTOS = [
     preco: 113.00,
     categoria: "colar",
     destaque: true,
-    estoque: 1,
+    estoque: 0,
     imagens: [
       "Fotos VP/COLARES/Colar de Prata 925 Ponto de Luz Gota Branca Delicada.jpg",
       "Fotos VP/COLARES/Colar de Prata 925 Ponto de Luz Gota Branca Delicada 2.webp"

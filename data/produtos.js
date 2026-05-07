@@ -244,7 +244,7 @@ window.PRODUTOS = [
     nome: "Colar de Prata 925 Ponto de Luz Coração",
     preco: 113.00,
     categoria: "colar",
-    destaque: false,
+    destaque: true,
     estoque: 1,
     imagens: [
       "Fotos VP/COLARES/Colar de Prata 925 Ponto de Luz Coração 2.webp",
@@ -284,7 +284,7 @@ window.PRODUTOS = [
     nome: "Colar de Prata 925 Ponto de Luz Gota Branca Delicada",
     preco: 113.00,
     categoria: "colar",
-    destaque: true,
+    destaque: false,
     estoque: 0,
     imagens: [
       "Fotos VP/COLARES/Colar de Prata 925 Ponto de Luz Gota Branca Delicada.jpg",

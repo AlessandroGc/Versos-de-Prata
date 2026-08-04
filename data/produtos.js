@@ -125,7 +125,7 @@ window.PRODUTOS = [
     preco: 104.60,
     categoria: "pulseira",
     destaque: false,
-    estoque: 1,
+    estoque: 0,
     imagens: [
       "Fotos VP/PULSEIRAS/Pulseira de Prata 925 Zircônias Azuis.webp"
     ],
@@ -163,7 +163,7 @@ window.PRODUTOS = [
     preco: 95.45,
     categoria: "pulseira",
     destaque: false,
-    estoque: 1,
+    estoque: 0,
     imagens: [
       "Fotos VP/PULSEIRAS/Pulseira de Prata 925 Ponto de Luz Coração Branco Central.webp"
     ],
@@ -264,7 +264,7 @@ window.PRODUTOS = [
     preco: 113.00,
     categoria: "colar",
     destaque: false,
-    estoque: 1,
+    estoque: 0,
     imagens: [
       "Fotos VP/COLARES/Colar de Prata 925 Ponto de Luz Coração Vermelho.webp",
       "Fotos VP/COLARES/Colar de Prata 925 Ponto de Luz Coração Vermelho 2.webp"
@@ -307,7 +307,7 @@ window.PRODUTOS = [
     preco: 89.90,
     categoria: "brinco",
     destaque: false,
-    estoque: 1,
+    estoque: 0,
     imagens: [
       "Fotos VP/BRINCOS/Trio de Brincos Prata 925 Coruja, Ponto de Luz e Corações.webp"
     ],
